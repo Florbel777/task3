@@ -1,0 +1,103 @@
+.contenedor /*padre*/
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap:10px;
+    
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav    nav    nav  "
+                        "section section ads"
+                        "footer footer footer";
+}
+.contenedor .header
+{
+    background-color: bisque;
+    grid-column:  header;
+}
+.contenedor .nav
+{
+    background-color: yellow;
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color: azure;
+    grid-column: section;
+    display: flex;
+    justify-items: center;
+    text-align:center;
+}
+.contenedor .ads
+{
+    background-color: chartreuse;
+    grid-column: ads;
+}
+.contenedor .footer
+{
+    background-color: darkorange;
+    grid-column: footer;
+}
+.contenedor .ads .p1
+{
+    background-color: blue;
+    grid-column: ads;
+    display: flex;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor .ads .p2
+{
+    background-color: blue;
+    grid-column: ads;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.contenedor .section .c1
+{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    grid-column: section;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: -80px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.contenedor .section .c2
+{
+    background-color: white;
+    grid-column: section;
+    border-color: black;
+    border-style: solid;
+    margin-top: 10px;
+    width: 400px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
